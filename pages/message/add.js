@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-function SendMessages() {
+function SendMessages(props) {
+  const { fetchData } = props;
   const [nama, setNama] = useState('');
   const [pesan, setPesan] = useState('');
   const [presence, setPresence] = useState('');
@@ -13,6 +14,7 @@ function SendMessages() {
       presence: presence ? true : false
     }
     await axios.post('/api/message', body);
+    fetchData()
   }
 
   return (
