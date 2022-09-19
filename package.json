@@ -6,13 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "axios": "^0.27.2",
     "dashify": "^2.0.0",
     "firebase-admin": "^10.0.2",
+    "framer-motion": "^7.3.5",
     "next": "12.0.10",
     "react": "^18.0.0-rc.0",
     "react-dom": "^18.0.0-rc.0",
-    "swr": "^1.2.1"
+    "react-intersection-observer": "^9.4.0",
+    "sass": "^1.54.9"
   },
   "prettier": {
     "arrowParens": "always",

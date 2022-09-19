@@ -1,0 +1,159 @@
+html,
+body {
+  margin: 0em;
+  overflow-x: hidden;
+  font-family: "Trirong", serif;
+}
+
+.heading-title {
+  font-family: 'Sofia', sans-serif;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #e7e4d3;
+}
+
+.heading-subtitle {
+  font-family: "Trirong", serif;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin: -0.8em 0 0 0;
+  padding: 0;
+  color: #59331e;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: #a1cad32b;
+  overflow: hidden;
+}
+
+section {
+  max-width: 428px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.guestmessagecontainer {
+  text-align: center;
+  border-bottom: 0.1em solid #fff;
+}
+
+.guestmessagecontainer>p:nth-child(1) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129.69%;
+  text-align: center;
+  color: #3F3209;
+  display: block;
+  margin-bottom: 18.9px;
+}
+
+.guestmessagecontainer>p:nth-child(2) {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FDF5C4;
+  display: block;
+}
+
+.message {
+  background: linear-gradient(188.48deg, #CCDFEA 8.58%, #A1CAD3 93.51%);
+  margin: 0.05em 0em 0em 0em;
+  padding: 1em;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 10em;
+}
+
+.message>.form-container>button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message>.form-container {
+  padding: 1em;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+// .message>.form-container>input,
+// .message>.form-container>select,
+// .message>.form-container>button,
+// .message>.form-container>label,
+// .message>.form-container>textarea {
+//   width: 100%;
+//   margin: 0em 0em 0.1em 0em;
+// }
+
+.guest {
+  background: #A1CAD3;
+  margin: 0.05em 0em 0em 0em;
+  padding: 1em;
+}
+
+.snowflake {
+  --size: 1vw;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -5vh;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+
+@for $i from 1 through 50 {
+  .snowflake:nth-child(#{$i}) {
+    --size: #{random(5) * 0.2}vw;
+    --left-ini: #{random(20) - 10}vw;
+    --left-end: #{random(20) - 10}vw;
+    left: #{random(100)}vw;
+    animation: snowfall #{5 + random(10)}s linear infinite;
+    animation-delay: -#{random(10)}s;
+  }
+}
+
+/* added small blur every 6 snowflakes*/
+.snowflake:nth-child(6n) {
+  filter: blur(1px);
+}
