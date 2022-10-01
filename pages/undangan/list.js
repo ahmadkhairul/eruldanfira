@@ -3,7 +3,7 @@ import Animated from '../../Components/animated';
 const GetMessages = (props) => {
   const { entriesData } = props;
 
-  if (entriesData && entriesData.length > 0) {
+  if (entriesData) {
     return entriesData.map((i, item) => (
       <Animated className="guestmessagecontainer" key={item}>
         <p>{i.message}</p>
