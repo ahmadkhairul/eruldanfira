@@ -5,6 +5,128 @@ body {
   font-family: "Trirong", serif;
 }
 
+p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+}
+
+/* Main Page */
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -10;
+}
+
+.bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100vh;
+  z-index: -10;
+}
+
+.rootpage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(188.48deg, #CCDFEA 8.58%, #A1CAD3 93.51%);
+}
+
+.rootpage>div {
+  max-width: 428px;
+}
+
+.mainpage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainpage>p:nth-child(1) {
+  font-size: 16px;
+  letter-spacing: 0.275em;
+  color: #FFFFFF;
+}
+
+.mainpage>p:nth-child(2),
+.mainpage>p:nth-child(5) {
+  font-size: 23px;
+  letter-spacing: 0.02em;
+  color: #FDF5C4;
+  margin: 0;
+}
+
+.mainpage>p:nth-child(3),
+.mainpage>p:nth-child(6) {
+  font-size: 14px;
+  letter-spacing: 0.4em;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.mainpage>p:nth-child(4) {
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin: 2;
+  font-style: italic;
+}
+
+.mainpage>p:nth-child(7) {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 2;
+}
+
+.mainpage>p:nth-child(9) {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #FDF5C4;
+  margin: 0;
+}
+
+.mainpage>p:nth-child(8),
+.mainpage>p:nth-child(10) {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 2;
+  font-style: italic;
+}
+
+.invitbox {
+  cursor: pointer;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.invitbox>div {
+  padding: 4px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading-title {
   font-family: 'Sofia', sans-serif;
   font-size: 36px;
@@ -27,6 +149,7 @@ body {
 
 main {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -42,30 +165,76 @@ section {
 
 .guestmessagecontainer {
   text-align: center;
-  border-bottom: 0.1em solid #fff;
+  border-top: 0.1em solid #fff;
+  margin: 2em 0em 0em 0em;
 }
 
 .guestmessagecontainer>p:nth-child(1) {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 129.69%;
-  text-align: center;
   color: #3F3209;
   display: block;
-  margin-bottom: 18.9px;
 }
 
 .guestmessagecontainer>p:nth-child(2) {
   font-style: italic;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
-  text-align: center;
   color: #FDF5C4;
-  display: block;
 }
 
+// save the date
+.savethedate {
+  background: linear-gradient(180deg, rgba(165, 204, 212, 0) 0%, #A3CBD3 100%);
+  margin: 0.05em 0em 0em 0em;
+  padding: 1em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stdcontainer {
+  margin-top: 30%;
+  background-color: #b8dde3;
+  height: 200px;
+  width: 350px;
+  border: 0px solid rgb(155, 182, 209);
+}
+
+.stdcontainer>p:nth-child(1) {
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  margin-bottom: 1px;
+}
+
+.stdcontainer>p:nth-child(2) {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: #FDF5C4;
+}
+
+.countdowntimer {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.countdowntimer>div {
+  padding: 10px;
+}
+
+.countdowntimer>div>p:nth-child(1) {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 0px;
+}
+
+.countdowntimer>div>p:nth-child(2) {
+  margin-top: 0px;
+}
+
+// message
 .message {
   background: linear-gradient(188.48deg, #CCDFEA 8.58%, #A1CAD3 93.51%);
   margin: 0.05em 0em 0em 0em;
@@ -89,32 +258,28 @@ textarea {
   height: 10em;
 }
 
-.message>.form-container>button {
+.form-container>button {
   width: 100%;
   background-color: #4CAF50;
-  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 2;
+  font-style: italic;
 }
 
-.message>.form-container {
+.form-container {
   padding: 1em;
   width: 90%;
   display: flex;
   flex-direction: column;
 }
-
-// .message>.form-container>input,
-// .message>.form-container>select,
-// .message>.form-container>button,
-// .message>.form-container>label,
-// .message>.form-container>textarea {
-//   width: 100%;
-//   margin: 0em 0em 0.1em 0em;
-// }
 
 .guest {
   background: #A1CAD3;
@@ -122,8 +287,38 @@ textarea {
   padding: 1em;
 }
 
+.footer {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// icon music
+.icon-music {
+  position: fixed;
+  bottom: 24px;
+  left: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  z-index: 200;
+
+  cursor: pointer;
+  border: 1px solid #A1CAD3;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+// Snowflake
 .snowflake {
-  --size: 1vw;
+  --size: 1px;
   width: var(--size);
   height: var(--size);
   background: white;
@@ -138,15 +333,15 @@ textarea {
   }
 
   100% {
-    transform: translate3d(var(--left-end), 110vh, 0);
+    transform: translate3d(var(--left-end), 100vh, 0);
   }
 }
 
 @for $i from 1 through 50 {
   .snowflake:nth-child(#{$i}) {
-    --size: #{random(5) * 0.2}vw;
-    --left-ini: #{random(20) - 10}vw;
-    --left-end: #{random(20) - 10}vw;
+    --size: 2px;
+    --left-ini: 2px;
+    --left-end: 2px;
     left: #{random(100)}vw;
     animation: snowfall #{5 + random(10)}s linear infinite;
     animation-delay: -#{random(10)}s;
