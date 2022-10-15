@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const Component = (props) => {
-  const { children, className } = props;
+  const { children, className, style } = props;
 
   return (
     <motion.div
@@ -14,7 +14,7 @@ const Component = (props) => {
         hidden: { y: "100px", opacity: 0 }
       }}
       className={className}
-      style={{ overflow: "none" }}
+      style={{ overflow: "none", ...style }}
     >
       {children}
     </motion.div>

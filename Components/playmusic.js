@@ -17,7 +17,7 @@ function FloatingMusic() {
 
   return (
     <div className="icon-music">
-      <audio id="myAudio" loop>
+      <audio id="myAudio" loop autoPlay>
         <source src="/static/music/PerhapsLove.MP3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>

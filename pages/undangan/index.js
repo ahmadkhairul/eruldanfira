@@ -5,8 +5,10 @@ import Animated from '../../Components/animated';
 import FloatingMusic from '../../Components/playmusic';
 
 import SaveTheDate from './savethedate';
+import Mempelai from './mempelai';
 import Add from './add';
 import List from './list';
+import Journey from './journey';
 
 function Component() {
 
@@ -20,6 +22,7 @@ function Component() {
   }
 
   useEffect(() => {
+    document.title = 'Erul ❤️ Fia Wedding';
     fetchData()
   }, [])
 
@@ -27,6 +30,8 @@ function Component() {
     <main>
       <section>
         <SaveTheDate />
+        <Mempelai />
+        <Journey />
         <Add fetchData={fetchData} />
         <div className="guest">
           <Animated className="heading-title">

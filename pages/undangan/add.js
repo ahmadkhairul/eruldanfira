@@ -32,16 +32,18 @@ function SendMessages(props) {
         Doa dan Ucapan
       </Animated>
       <Animated className="form-container">
-        <label htmlFor="nama">NAMA :</label>
+        <label htmlFor="nama">Nama :</label>
         <input
           name='nama'
+          minLength={3}
+          maxLength={100}
           type='text'
           value={nama}
           onChange={(e) => setNama(e.target.value)}
         />
       </Animated>
       <Animated className="form-container">
-        <label htmlFor="pesan">PESAN UNTUK MEMPELAI :</label>
+        <label htmlFor="pesan">Pesan untuk mempelai :</label>
         <textarea
           name='pesan'
           type='text'
@@ -51,7 +53,7 @@ function SendMessages(props) {
         />
       </Animated>
       <Animated className="form-container">
-        <label htmlFor='presence'>KONFIRMASI KEHADIRAN :</label>
+        <label htmlFor='presence'>Konfirmasi kehadiran :</label>
         <select
           name='presence'
           value={presence}

@@ -4,12 +4,16 @@ const GetMessages = (props) => {
   const { entriesData } = props;
 
   if (entriesData) {
-    return entriesData.map((i, item) => (
-      <Animated className="guestmessagecontainer" key={item}>
-        <p>{i.message}</p>
-        <p>{i.name}</p>
-      </Animated>
-    ))
+    return (
+      <div style={{ maxHeight: '400px', height: '100%', overflowY: 'auto', marginTop: '10px' }}>
+        {entriesData.map((i, item) => (
+          <Animated className="guestmessagecontainer" key={item}>
+            <p>{i.message}</p>
+            <p>{i.name}</p>
+          </Animated>
+        ))}
+      </div>
+    )
   } else {
     return <Animated>belum ada pesan ...'</Animated>;
   }
