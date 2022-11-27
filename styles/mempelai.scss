@@ -1,0 +1,51 @@
+.mempelai {
+  background: #a3d5df;
+  text-align: center;
+}
+
+.mempelai>p {
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #3F3209;
+  font-weight: 300;
+}
+
+.mempelai>.doa {
+  margin-bottom: 15px;
+  padding: 10px;
+  margin: 0px 15px 15px 15px;
+  letter-spacing: 0.08em;
+}
+
+.mempelai>.mempelainama {
+  font-family: 'Sofia', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.mempelai>.mempelaiseparator {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 25px;
+  color: #fff;
+  font-family: 'Sofia', sans-serif;
+}
+
+.mempelai>.mempelaiortu {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mempelai>div>img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+}

@@ -5,7 +5,7 @@ const GetMessages = (props) => {
 
   if (entriesData) {
     return (
-      <div style={{ maxHeight: '400px', height: '100%', overflowY: 'auto', marginTop: '10px' }}>
+      <div style={{ maxHeight: '75vh', height: '100%', overflowY: 'auto', marginTop: '10px' }}>
         {entriesData.map((i, item) => (
           <Animated className="guestmessagecontainer" key={item}>
             <p>{i.message}</p>

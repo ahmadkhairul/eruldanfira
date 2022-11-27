@@ -2,7 +2,7 @@ import Animated from '../../Components/animated';
 
 export const stories = [
   {
-    title: 'Pertemuan & Perkenalan',
+    title: <a href="https://www.instagram.com/p/BfvgyKLHSDl/?hl=en" target="_blank">Pertemuan & Perkenalan</a>,
     date: 'Februari 2018',
     description: 'Kami berkenalan dan dipertemukan untuk pertama kali di sebuah event Jepang di Bandung. Namun saat itu hubungan kami hanya sebatas teman yang jarang berkomunikasi.',
   },
@@ -31,10 +31,10 @@ export const stories = [
 function Journey() {
 
   return (
-    <div className="journey">
+    <div className="container journey">
       <Animated className="heading-title">Our Love Story</Animated>
       {stories.map((i, index) => (
-        <Animated className="container-journey" key={index}>
+        <Animated key={index}>
           <section className='title'>{i.title}</section>
           <section className='tanggal'>{i.date}</section>
           <section className='deskripsi'>{i.description}</section>

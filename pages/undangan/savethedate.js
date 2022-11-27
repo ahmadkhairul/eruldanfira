@@ -56,7 +56,7 @@ function SaveTheDate() {
   }
 
   return (
-    <div className="savethedate">
+    <div className="container savethedate">
       <Countdown
         date={1690243200000}
         renderer={renderer}

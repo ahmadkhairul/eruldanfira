@@ -1,0 +1,49 @@
+.savethedate {
+  background: linear-gradient(180deg, rgba(165, 204, 212, 0) 0%, #a3d5df 100%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stdcontainer {
+  margin-top: 30%;
+  background-color: #b8dde3;
+  height: 200px;
+  width: 350px;
+  border: 0px solid rgb(155, 182, 209);
+}
+
+.stdcontainer>p:nth-child(1) {
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  margin-bottom: 1px;
+}
+
+.stdcontainer>p:nth-child(2) {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: #FDF5C4;
+}
+
+.countdowntimer {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.countdowntimer>div {
+  padding: 10px;
+}
+
+.countdowntimer>div>p:nth-child(1) {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 0px;
+}
+
+.countdowntimer>div>p:nth-child(2) {
+  margin-top: 0px;
+}

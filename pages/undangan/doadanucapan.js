@@ -27,7 +27,7 @@ function SendMessages(props) {
   }
 
   return (
-    <div className="message">
+    <div className="container message">
       <Animated className="heading-title">
         Doa dan Ucapan
       </Animated>

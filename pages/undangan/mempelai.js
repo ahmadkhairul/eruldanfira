@@ -8,7 +8,7 @@ const data = {
 function Mempelai() {
 
   return (
-    <div className="mempelai">
+    <div className="container mempelai">
       <Animated className="heading-title">Mempelai</Animated>
       <Animated className="doa">{data.doa}</Animated>
       <Animated><img src="/static/images/mp.jpg" /></Animated>

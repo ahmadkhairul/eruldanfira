@@ -1,0 +1,87 @@
+.weddinggift {
+  background: #a3d5df;
+}
+
+.weddinggift>.deskripsi {
+  color: #3F3209;
+  font-size: 18px;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+.weddinggift>.kado {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(184, 184, 215);
+  cursor: pointer;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.weddinggift>.kado>p {
+  max-width: 100%;
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weddinggift>.kado>p:nth-child(2) {
+  color: #353535;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+.weddinggift>.kado>p:nth-child(3) {
+  color: #54595F;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
+.weddinggift>.kado button {
+  width: 100px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #88cbf5;
+  border-radius: 25px 25px 25px 25px;
+  padding: 4px 20px 4px 20px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you {
+  margin-top: 60px;
+}
+
+.thank-you>p {
+  font-family: "Trirong", serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300;
+
+  width: 100%;
+  text-align: center;
+  color: #f6f5f3;
+  line-height: 10px;
+}
+
+.thank-you>p:nth-child(3) {
+  margin-top: 45px;
+  font-size: 18px;
+}
+
+.thank-you>p:nth-child(4) {
+  font-family: 'Sofia', sans-serif;
+  font-size: 25px;
+}

@@ -1,0 +1,67 @@
+.message {
+  background: #a3d5df;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  font-family: "Trirong", serif;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+textarea {
+  resize: none;
+  height: 10em;
+}
+
+.form-container>button {
+  width: 100%;
+  background-color: #4CAF50;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 2;
+  font-style: italic;
+}
+
+.form-container {
+  padding: 1em;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.guest {
+  background: #a3d5df;
+  margin: 0.05em 0em 0em 0em;
+  padding: 1em;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-family: "Trirong", serif;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
