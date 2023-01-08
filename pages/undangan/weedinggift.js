@@ -14,14 +14,14 @@ function copyToCB(text) {
 
 const gift = [
   {
-    text: "10987654321",
-    description: "a/n Shafira Nur Zainal Abidin",
-    copy: "10987654321",
+    text: "0123802152100",
+    description: "BJB a/n Shafira Nur Zainal Abidin",
+    copy: "0123802152100",
   },
   {
-    text: "12345678910",
-    description: "a/n Ahmad Khairul Anwar",
-    copy: "12345678910"
+    text: "1270010496139",
+    description: "MANDIRI a/n Ahmad Khairul Anwar",
+    copy: "1270010496139"
   },
   {
     text: "Alamat Pengiriman Hadiah Fisik",

@@ -53,8 +53,8 @@ function Component() {
           <small className="block">&copy; 2022 Created by Khairul with lots of 🤎 for Fira.</small>
           <small className="block">
             Song by{' '}
-            <a href="https://www.youtube.com/watch?v=JTfYmOwgpfY" target="_blank" rel="noreferrer">
-              HowL {'&'} J - Perhaps Love
+            <a href="https://www.youtube.com/watch?v=m-q1V4Vx02c" target="_blank" rel="noreferrer">
+              Ari Lasso - Cinta Terakhir
             </a>
           </small>
         </div>

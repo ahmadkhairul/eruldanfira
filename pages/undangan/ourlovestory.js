@@ -4,7 +4,7 @@ export const stories = [
   {
     title: <a href="https://www.instagram.com/p/BfvgyKLHSDl/?hl=en" target="_blank">Pertemuan & Perkenalan</a>,
     date: 'Februari 2018',
-    description: 'Kami berkenalan dan dipertemukan untuk pertama kali di sebuah event Jepang di Bandung. Namun saat itu hubungan kami hanya sebatas teman yang jarang berkomunikasi.',
+    description: 'Kami berkenalan dan dipertemukan untuk pertama kali di sebuah festival di Bandung. Namun saat itu hubungan kami hanya sebatas teman yang jarang berkomunikasi.',
   },
   {
     title: 'Mengikat Janji',
@@ -24,7 +24,7 @@ export const stories = [
   {
     title: 'Pernikahan',
     date: 'Juli 2023',
-    description: 'Alhamdulillah pernikahan kami InsyaAllah akan dilaksanakan pada tanggal 08 Juli 2023. Semoga Allah selalu melindungi kami, memberikan keluarga kami keberkahan serta keturunan sholeh-sholehah dan diberikan rezeki yang melimpah Aamiin'
+    description: 'Alhamdulillah pernikahan kami InsyaAllah akan dilaksanakan pada tanggal 24 Juni 2023. Semoga Allah selalu melindungi kami, memberikan keluarga kami keberkahan serta keturunan sholeh-sholehah dan diberikan rezeki yang melimpah Aamiin'
   }
 ];
 

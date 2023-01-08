@@ -10,11 +10,12 @@ const LocationMap = () => {
       <Animated className="mapouter">
         <div className="gmap_canvas">
           <iframe
-            src="https://maps.google.com/maps?q=balai%20desa%20cikelat&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.11278679581!2d106.47723081124568!3d-6.957785730039542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4283253db7d975%3A0x489b8dc14c0df6f7!2sKopdit%20Subur%20Pgri%20Cisolok!5e0!3m2!1sen!2sid!4v1673176776258!5m2!1sen!2sid"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
           </iframe>
           <br />
         </div>
@@ -24,9 +25,9 @@ const LocationMap = () => {
           Lokasi
         </Animated>
         <Animated className="deskripsi">
-          Balai Desa Cikelat<br />
-          Kp. Nagrak RT 03/RW 04 Desa Cikelat,<br />
-          Kec Cisolok, Kab. Sukabumi, Jawa Barat
+          Kopdit Subur PGRI Cisolok<br />
+          Jl. Cirenik, Karangpapak,<br />
+          Kec. Cisolok, Kabupaten Sukabumi, Jawa Barat
         </Animated>
         <Animated className="title">
           Akad Nikah
