@@ -1,20 +1,27 @@
 .guestmessagecontainer {
   text-align: center;
-  border-top: 0.1em solid #fff;
   margin: 2em 0em 0em 0em;
 }
 
-.guestmessagecontainer>p:nth-child(1) {
+.guestmessagecontainer p {
+  text-align: left;
   font-weight: 300;
-  letter-spacing: 0.08em;
-  color: #3F3209;
-  display: block;
 }
 
-.guestmessagecontainer>p:nth-child(2) {
-  font-style: italic;
+.guestmessagecontainer p:nth-child(1) {
+  color: #fdf5c4;
+  font-size: 17px;
+  margin: 5px 0px;
+}
+
+.guestmessagecontainer p:nth-child(2) {
+  color: #fff;
   font-size: 16px;
-  color: #FDF5C4;
-  font-weight: 300;
-  letter-spacing: 0.08em;
+  margin: 15px 0px 2px 0px;
+}
+
+.guestmessagecontainer p:nth-child(3) {
+  color: #ebebeb;
+  font-size: 15px;
+  margin: 3px 0px 30px 0px;
 }

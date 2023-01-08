@@ -190,7 +190,37 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: #fff;
+}
+
+.icon-music>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon>polyline {
+  stroke: #ffffff;
+}
+
+.prevbtn {
+  top: 40%;
+  position: absolute;
+  cursor: pointer;
+  right: 0px;
+  left: auto;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+.nextbtn {
+  top: 40%;
+  position: absolute;
+  cursor: pointer;
+  right: auto;
+  z-index: 10;
+  opacity: 0.6;
 }
 
 // snowflake

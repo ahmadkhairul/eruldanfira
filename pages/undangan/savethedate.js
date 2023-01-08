@@ -12,7 +12,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return (
       <Animated className="stdcontainer">
         <p>Save The Date</p>
-        <p>Minggu, 25 Juni 2023</p>
+        <p>Sabtu, 24 Juni 2023</p>
         <div className="countdowntimer">
           <div>
             <p>{days}</p>
@@ -58,7 +58,7 @@ function SaveTheDate() {
   return (
     <div className="container savethedate">
       <Countdown
-        date={1690243200000}
+        date={'2023-06-24T09:00:00'}
         renderer={renderer}
       />
     </div>

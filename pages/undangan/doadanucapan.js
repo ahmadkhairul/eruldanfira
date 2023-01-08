@@ -6,7 +6,7 @@ function SendMessages(props) {
   const { fetchData } = props;
   const [nama, setNama] = useState('');
   const [pesan, setPesan] = useState('');
-  const [presence, setPresence] = useState('');
+  const [presence, setPresence] = useState('hadir');
   const [message, setMessage] = useState('');
 
   const handleSubmit = async () => {
@@ -59,12 +59,12 @@ function SendMessages(props) {
           value={presence}
           onChange={(e) => setPresence(e.target.value)}
         >
-          <option value={true}>Hadir</option>
-          <option value={false}>Tidak Hadir</option>
+          <option value={'hadir'}>Hadir</option>
+          <option value={'tidak hadir'}>Tidak Hadir</option>
         </select>
       </Animated>
       <Animated className="form-container">
-        <button onClick={handleSubmit}>
+        <button disabled={message} onClick={handleSubmit}>
           Kirim
         </button>
       </Animated>

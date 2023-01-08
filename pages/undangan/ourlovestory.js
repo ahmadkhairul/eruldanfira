@@ -17,15 +17,15 @@ export const stories = [
     description: 'Setelah menjalani LDR selama beberapa bulan, akhirnya kita bisa bertemu di Bandung. Hubungan kami tidak sepenuhnya mulus, pahit manis dalam hubungan kami lewati bersama.',
   },
   {
-    title: 'Kesungguhan',
-    date: 'November 2022',
-    description: 'Anniversary 1 tahun',
+    title: 'Lamaran',
+    date: 'Desember 2022',
+    description: 'Hingga akhirnya pada Bulan Desember 2022, untuk menunjukkan keseriusan maka kami pertemukan kedua keluarga kami pada acara lamaran di tanggal 08 Desember 2022',
   },
   {
-    title: 'Memastikan Masa Depan',
-    date: 'Desember 2022',
-    description: 'Hingga akhirnya pada Bulan Desember 2022, untuk menunjukkan keseriusan maka kami pertemukan kedua keluarga kami pada acara lamaran di tanggal ..., hingga ditetapkan acara pernikahan pada tanggal ...',
-  },
+    title: 'Pernikahan',
+    date: 'Juli 2023',
+    description: 'Alhamdulillah pernikahan kami InsyaAllah akan dilaksanakan pada tanggal 08 Juli 2023. Semoga Allah selalu melindungi kami, memberikan keluarga kami keberkahan serta keturunan sholeh-sholehah dan diberikan rezeki yang melimpah Aamiin'
+  }
 ];
 
 function Journey() {

@@ -38,14 +38,15 @@ function Component() {
         <Journey />
         <Gallery />
         <Add fetchData={fetchData} />
-        <div className="container guest">
+        <div className="container message">
           <Animated className="heading-title">
             Doa dan Ucapan <br /> dari Undangan
           </Animated>
           {loading
-            ? <Animated>sedang memuat ...'</Animated>
-            : <List entriesData={data} />
-          }
+            ? <Animated className='guestmessagecontainer'>
+              <p>sedang memuat ...</p>
+            </Animated>
+            : <List entriesData={data} />}
         </div>
         <Weddinggift />
         <div className="footer">
@@ -57,8 +58,6 @@ function Component() {
             </a>
           </small>
         </div>
-        <div className="footer" />
-        <div className="footer" />
       </section>
       <FloatingMusic />
     </main>

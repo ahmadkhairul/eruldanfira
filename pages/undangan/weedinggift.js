@@ -2,8 +2,14 @@ import Animated from '../../Components/animated';
 import { BsGift, BsFiles } from "react-icons/bs";
 
 function copyToCB(text) {
-  navigator.clipboard.writeText(text);
-  alert(`${text} Berhasil Disalin !`);
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      alert(`${text} Berhasil Disalin !`);
+    })
+    .catch(() => {
+      alert(`${text} Gagal Disalin !`);
+    });
 }
 
 const gift = [

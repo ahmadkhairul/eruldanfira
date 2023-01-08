@@ -14,7 +14,7 @@ const Component = () => {
     <div className="rootpage">
       <div>
         <div className="heading-title">
-          Masukan nama anda:
+          Masukan nama anda
         </div>
         <div className="form-container">
           <label htmlFor="nama">NAMA :</label>
