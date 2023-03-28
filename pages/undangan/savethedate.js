@@ -57,7 +57,7 @@ function SaveTheDate() {
 
   return (
     <div className="container savethedate">
-      <img src="/static/images/bg-std-removebg.png" alt="" />
+      <img src="/static/images/gallery (7).jpg" alt="" />
       <Countdown
         date={'2023-06-24T09:00:00'}
         renderer={renderer}
