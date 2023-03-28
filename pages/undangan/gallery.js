@@ -11,6 +11,7 @@ function Journey() {
             <img key={index} src={`/static/images/gallery (${index + 1}).jpg`} />
           ))}
         </Slider>
+        <p>Photo by : <a href='https://www.instagram.com/afternoon.project/?hl=en' target='_blank'>@afternoon.project</a></p>
       </Animated>
       <div className="footer" />
     </div>

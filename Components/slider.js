@@ -24,7 +24,6 @@ function PrevArrow(props) {
 function Carousel(props) {
   const { children, className } = props;
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

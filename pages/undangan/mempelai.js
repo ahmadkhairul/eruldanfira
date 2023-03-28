@@ -12,12 +12,20 @@ function Mempelai() {
       <Animated className="heading-title">Mempelai</Animated>
       <Animated className="doa">{data.doa}</Animated>
       <Animated><img src="/static/images/mp.jpg" /></Animated>
-      <Animated className='mempelainama'>Ahmad Khairul Anwar, ST. </Animated>
+      <Animated className='mempelainama'>
+        <a href='https://www.instagram.com/hmadzk/?hl=en' target='_blank'>
+          Ahmad Khairul Anwar, ST.
+        </a>
+      </Animated>
       <Animated className='mempelaiortu'>Putra Bapak Bejo Hartanto </Animated>
       <Animated className='mempelaiortu'>{'&'} Ibu Jamilah, S.Pd.I</Animated>
       <Animated className='mempelaiseparator'>{'&'}</Animated>
       <Animated><img src="/static/images/mw.jpg" /></Animated>
-      <Animated className='mempelainama'> Shafira Nur Zainal Abidin, S.Pd.</Animated>
+      <Animated className='mempelainama'>
+        <a href='https://www.instagram.com/shafiranzai/?hl=en' target='_blank'>
+          Shafira Nur Zainal Abidin, S.Pd.
+        </a>
+      </Animated>
       <Animated className='mempelaiortu'>Putri Bapak Eri Nur Zainal Abidin, S.Pd., M.Si </Animated>
       <Animated className='mempelaiortu'>{'&'} Ibu Tuti Rohaeni, S.Pd</Animated>
       <div className='footer' />
