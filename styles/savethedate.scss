@@ -1,9 +1,19 @@
 .savethedate {
   background: linear-gradient(180deg, rgba(165, 204, 212, 0) 0%, #a3d5df 100%);
-  
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.savethedate img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100vh;
+  z-index: -10;
 }
 
 .stdcontainer {

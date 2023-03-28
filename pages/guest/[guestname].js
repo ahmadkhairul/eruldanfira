@@ -16,7 +16,7 @@ const Component = () => {
     <main>
       <section>
         <div className="bg">
-          <img src="/static/images/bg-2.gif" alt="" />
+          <img src="/static/images/bg-1.gif" alt="" />
         </div>
         <div className="mainpage">
           <p>wedding of</p>

@@ -14,7 +14,7 @@ const Component = () => {
     <div className="rootpage">
       <div>
         <div className="heading-title">
-          Masukan nama anda
+         ERUL & FIRA
         </div>
         <div className="form-container">
           <label htmlFor="nama">NAMA :</label>
@@ -23,6 +23,7 @@ const Component = () => {
             type='text'
             value={nama}
             onChange={(e) => setNama(e.target.value)}
+            placeholder='Masukkan Nama Anda'
           />
         </div>
         <div className="form-container">
