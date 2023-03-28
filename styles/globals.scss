@@ -23,6 +23,9 @@ a {
 }
 
 /* Main Page */
+small {
+  font-size: 11px;
+}
 
 .bg {
   position: fixed;
@@ -196,7 +199,7 @@ section {
   background-color: #fff;
 }
 
-.icon-music>div{
+.icon-music>div {
   display: flex;
   justify-content: center;
   align-items: center;

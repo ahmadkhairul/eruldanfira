@@ -50,8 +50,8 @@ function Component() {
         </div>
         <Weddinggift />
         <div className="footer">
-          <small className="block">&copy; 2022 Created by Khairul with lots of 🤎 for Shafira.</small>
-          <small className="block">
+          <small>&copy; 2023 Created by Khairul with lots of 🤎 for Shafira.</small>
+          <small>
             Song by{' '}
             <a href="https://www.youtube.com/watch?v=cjaW3edHhHA" target="_blank" rel="noreferrer">
               Howl {'&'} J - Perhaps Love
