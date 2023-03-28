@@ -8,8 +8,11 @@ const Component = () => {
 
   const capitalizeRemoveStrip = (str) => {
     if (!str) return;
-    let string = str.replace(/-/g, ' ');
-    return string.charAt(0).toUpperCase() + string.slice(1);
+    const string = str.split('-');
+    const uppercase = string.map(element => (
+      element.charAt(0).toUpperCase() + element.slice(1)
+    ));
+    return uppercase.map(e => `${e} `);
   }
 
   return (
