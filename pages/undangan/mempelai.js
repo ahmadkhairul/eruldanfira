@@ -14,7 +14,7 @@ function Mempelai() {
       <Animated><img src="/static/images/mp.jpg" /></Animated>
       <Animated className='mempelainama'>
         <a href='https://www.instagram.com/hmadzk/?hl=en' target='_blank'>
-          Ahmad Khairul Anwar, ST.
+          Ahmad Khairul Anwar, S.T.
         </a>
       </Animated>
       <Animated className='mempelaiortu'>Putra Bapak Bejo Hartanto </Animated>
@@ -26,8 +26,10 @@ function Mempelai() {
           Shafira Nur Zainal Abidin, S.Pd.
         </a>
       </Animated>
-      <Animated className='mempelaiortu'>Putri Bapak Eri Nur Zainal Abidin, S.Pd., M.Si </Animated>
+      <Animated className='mempelaiortu'>Putri Bapak Eri Nur Zainal Abidin, S.Pd., M.Si</Animated>
+      <Animated className='mempelaiortu'>{'('} Ketua KKKS Kecamatan Cisolok {')'}</Animated>
       <Animated className='mempelaiortu'>{'&'} Ibu Tuti Rohaeni, S.Pd</Animated>
+      <Animated className='mempelaiortu'>{'('} Kepala SD Negeri 1 Cipatat {')'}</Animated>
       <div className='footer' />
     </div>
   )

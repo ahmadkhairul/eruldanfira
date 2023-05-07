@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TbMusic, TbMusicOff } from "react-icons/tb";
 
 function FloatingMusic() {
@@ -15,18 +15,26 @@ function FloatingMusic() {
     setPlay(!play);
   };
 
+  useEffect(() => {
+    document.getElementById('myAudio').play().catch((error) => {
+      document.addEventListener('click', () => {
+        document.getElementById('myAudio').play()
+      }, { once: true })
+    })
+  },[])
+
   return (
-    <div className="icon-music">
-      <audio id="myAudio" loop autoPlay>
-        <source src="/static/music/music-2.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <div className="icon-music">
+        <audio id="myAudio" loop autoPlay>
+          <source src="/static/music/music-2.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
 
-      <div onClick={toggleMusic}>
-        {play ? <TbMusic /> : <TbMusicOff />}
+        <div onClick={toggleMusic}>
+          {play ? <TbMusic /> : <TbMusicOff />}
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
-export default FloatingMusic;
+  export default FloatingMusic;
