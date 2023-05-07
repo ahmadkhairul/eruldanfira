@@ -14,15 +14,15 @@ export default function Document() {
         <meta property="og:title" content="The Wedding of Khairul &amp; Shafira" />
         <meta property="og:description" content="Sabtu, 24 Juni 2023" />
         <meta property="og:url" content="https://eruldanfira.vercel.app" />
-        <meta property="og:image" content="https://eruldanfira.vercel.app/static/images/meta-img.jpg" />
+        <meta property="og:image" content="https://eruldanfira.vercel.app/static/images/meta-img.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:image:width" content="256" />
-        <meta property="og:image:height" content="256" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <meta property="og:image:type" content="image/jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content="The Wedding of Khairul &amp; Shafira" />
-        <meta name="twitter:image:src" content="https://eruldanfira.vercel.app/static/images/meta-img.jpg" />
+        <meta name="twitter:image:src" content="https://eruldanfira.vercel.app/static/images/meta-img.png" />
 
         <meta property="og:updated_time" content="1682008998" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
