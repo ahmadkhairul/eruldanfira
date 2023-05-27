@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Animated from '../../Components/animated';
 
 const data = {
@@ -6,6 +7,8 @@ const data = {
 }
 
 function Mempelai() {
+
+  const [show, setShow] = useState(false);
 
   return (
     <div className="container mempelai">
@@ -23,13 +26,22 @@ function Mempelai() {
       <Animated><img src="/static/images/mw.jpg" /></Animated>
       <Animated className='mempelainama'>
         <a href='https://www.instagram.com/shafiranzai/?hl=en' target='_blank'>
-          Shafira Nur Zainal Abidin, S.Pd.
+          {show
+            ? 'My Very Very Lovely Shafira ❤'
+            : 'Shafira Nur Zainal Abidin, S.Pd.'
+          }
         </a>
       </Animated>
       <Animated className='mempelaiortu'>Putri Bapak Eri Nur Zainal Abidin, S.Pd., M.Si</Animated>
       <Animated className='mempelaiortu'>{'('} Ketua KKKS Kecamatan Cisolok {')'}</Animated>
       <Animated className='mempelaiortu'>{'&'} Ibu Tuti Rohaeni, S.Pd</Animated>
       <Animated className='mempelaiortu'>{'('} Kepala SD Negeri 1 Cipatat {')'}</Animated>
+      <div
+        onClick={() => setShow(!show)}
+        style={{ color: show ? 'white' : '#a3d5df', cursor: 'pointer' }}
+      >
+        show me!! Fira name in Erul contact hehe
+      </div>
       <div className='footer' />
     </div>
   )
