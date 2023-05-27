@@ -47,13 +47,13 @@ function Journey() {
         onClick={() => setShow(!show)}
         style={{ color: show ? 'white' : '#a3d5df', cursor: 'pointer' }}
       >
-        After Story ❤
+        After Story
       </div>
       {show
         ? <Animated>
           <section className='title'>Rencana Kami</section>
           <section className='tanggal'>After Marriage</section>
-          <section className='deskripsi'>Kami akan tinggal selama seminggu di rumah orang tua Shafira untuk melaksanakann Lebaran pertama kami sebagai suami istri. <br /><br /> Kemudian, kami akan pindah ke rumah kami di Sumedang yang telah dipersiapkan sejak 2 tahun yang lalu. <br /><br /> Setelah itu, kami akan ke rumah orang tua Khairul, menginap selama seminggu untuk mempersiapkan acara pengajian dirumah kami. <br /><br /> Pengajian di dilaksanakan secara sederhana di rumah kami dengan mengundang pak RT dan pak RW. <br /><br /> Setelah itu, kami akan refreshing ke Lembang sejenak untuk kemudian melaksanakan acara syukuran di rumah paman Shafira dengan mengundang teman-teman kami yang tinggal di bandung yang tidak bisa datang di hari pernikahan kami di Pelabuhan Ratu. <br /><br /> Setelah itu, kami akan honeymoon ke Seaworld di Jakarta yeayy! <br /><br /> Semoga kami selalu bersama saling mencintai dan menyayangi hingga maut memisahkan. </section>
+          <section className='deskripsi'>Kami akan tinggal selama seminggu di rumah orang tua Shafira untuk melaksanakann Lebaran pertama kami sebagai suami istri. <br /><br /> Kemudian, kami akan pindah ke rumah kami di Sumedang yang telah dipersiapkan sejak 2 tahun yang lalu. <br /><br /> Setelah itu, kami akan ke rumah orang tua Khairul, menginap selama seminggu untuk mempersiapkan acara pengajian di rumah kami. <br /><br /> Pengajian dilaksanakan secara sederhana di rumah kami dengan mengundang Pak RT dan Pak RW. <br /><br /> Setelah itu, kami akan refreshing ke Lembang sejenak untuk kemudian melaksanakan acara syukuran di rumah paman Shafira dengan mengundang teman-teman kami yang tinggal di bandung yang tidak bisa datang di hari pernikahan kami di Pelabuhan Ratu. <br /><br /> Setelah itu, kami akan honeymoon ke Seaworld di Jakarta yeayy! <br /><br /> Semoga kami selalu bersama saling mencintai dan menyayangi hingga maut memisahkan. </section>
         </Animated>
         : ''
       }

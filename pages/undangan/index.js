@@ -48,7 +48,7 @@ function Modal({ modal, setModal }) {
           }}
           onClick={() => setModal(!modal)}
         >
-          <p>Organisasi Kesehatan Dunia secara resmi mengumumkan berakhirnya pandemi global Covid-19 pada Jumat 5 Mei 2023.</p>
+          <p>World Health Organization {'('}WHO{')'} secara resmi mengumumkan berakhirnya pandemi global Covid-19 pada Jumat 5 Mei 2023.</p>
           <p>Namun, virus ini masih beredar dan mematikan sehingga protokol kesehatan harus tetap dijalankan.</p>
           <p
             style={{
