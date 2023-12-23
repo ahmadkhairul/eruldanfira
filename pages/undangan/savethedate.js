@@ -59,7 +59,7 @@ function SaveTheDate() {
     <div className="container savethedate">
       <img src="/static/images/gallery (7).jpg" alt="" />
       <Countdown
-        date={'2023-06-24T09:00:00'}
+        date={'2024-02-18T09:00:00'}
         renderer={renderer}
       />
     </div>

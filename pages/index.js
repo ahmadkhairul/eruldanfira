@@ -14,7 +14,7 @@ const Component = () => {
     <div className="rootpage">
       <div>
         <div className="heading-title">
-         ERUL & FIRA
+         NAJIB & SELVIA
         </div>
         <div className="form-container">
           <label htmlFor="nama">NAMA :</label>
