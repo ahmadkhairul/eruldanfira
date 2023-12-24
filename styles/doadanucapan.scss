@@ -1,5 +1,7 @@
 .message {
-  background: #a3d5df;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
 }
 
 input[type=text],
@@ -25,7 +27,7 @@ textarea {
 
 .form-container>button {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #f44336;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;

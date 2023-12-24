@@ -18,16 +18,13 @@ const Component = () => {
   return (
     <main>
       <section>
-        <div className="bg">
-          <img src="/static/images/bg-1.gif" alt="" />
-        </div>
         <div className="mainpage">
           <p>wedding of</p>
-          <p>Ahmad Khairul Anwar, ST.</p>
-          <p>{'('}Khairul{')'}</p>
+          <p>Ahmad Najib Fahmi</p>
+          <p>{'('}Najib{')'}</p>
           <p>{'&'}</p>
-          <p>Shafira Nur Zainal Abidin, S.Pd.</p>
-          <p>{'('}Shafira{')'}</p>
+          <p>Selvia Apriyani</p>
+          <p>{'('}Selvia{')'}</p>
           <p>You are invited to our wedding</p>
           <p>Kepada Yth.</p>
           <p>{capitalizeRemoveStrip(guestname)}</p>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 
 import Animated from '../../Components/animated';
@@ -41,7 +41,7 @@ function Modal({ modal, setModal }) {
         <div
           style={{
             width: '300px',
-            backgroundColor: '#a3d5df',
+            backgroundColor: 'hotpink',
             padding: '20px 10px 10px 10px',
             borderRadius: '18px',
             border: '4px solid white',
@@ -56,12 +56,6 @@ function Modal({ modal, setModal }) {
               cursor: 'pointer'
             }}
           >Baiklah, Saya Mengerti</p>
-          <p
-            style={{
-              cursor: 'pointer',
-              color: '#a3d5df',
-            }}
-          >Tidak, Saya Tidak Mengerti {'>'}:{'('}</p>
         </div>
       </div>
     </>
@@ -73,6 +67,9 @@ function Component() {
   const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(true);
 
+  const [height, setHeight] = useState(0);
+  const ref = useRef(null)
+
   const fetchData = async () => {
     const { data: { entriesData } } = await axios.get('/api/message/message');
     setData(entriesData)
@@ -80,8 +77,9 @@ function Component() {
   }
 
   useEffect(() => {
-    document.title = 'Ahmad Khairul A ❤️ Shafira Nur ZA Wedding';
-    fetchData()
+    document.title = 'Najib ❤️ Selvia';
+    fetchData();
+    setHeight(ref.current.clientHeight);
   }, [])
 
   return (
@@ -95,25 +93,28 @@ function Component() {
           <Journey />
           <Gallery />
           <Add fetchData={fetchData} />
-          <div className="container message">
-            <Animated className="heading-title">
-              Doa dan Ucapan <br /> dari Undangan
-            </Animated>
-            {loading
-              ? <Animated className='guestmessagecontainer'>
-                <p>sedang memuat ...</p>
+          <div style={{ height }}>
+            <div className="container message" ref={ref}>
+              <Animated className="heading-title">
+                Doa dan Ucapan <br /> dari Undangan
               </Animated>
-              : <List entriesData={data} />}
+              {loading
+                ? <Animated className='guestmessagecontainer'>
+                  <p>sedang memuat ...</p>
+                </Animated>
+                : <List entriesData={data} />}
+            </div>
+            <div className="background-images-3" style={{ height, bottom: height }} />
           </div>
           <Weddinggift />
           <div className="footer">
-            <small>&copy; 2023 Created by Khairul with lots of 🤎 for Shafira.</small>
-            <small>
+            <small>&copy; 2024 Created by Khairul with lots of 🤎 for Najib and Selvia.</small>
+            {/* <small>
               Song by{' '}
               <a href="https://www.youtube.com/watch?v=cjaW3edHhHA" target="_blank" rel="noreferrer">
                 Howl {'&'} J - Perhaps Love
               </a>
-            </small>
+            </small> */}
           </div>
         </section>
         <FloatingMusic />

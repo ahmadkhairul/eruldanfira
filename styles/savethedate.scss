@@ -1,5 +1,8 @@
 .savethedate {
-  background: linear-gradient(180deg, rgba(165, 204, 212, 0) 0%, #a3d5df 100%);
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,10 +23,10 @@
 
 .stdcontainer {
   margin-top: 30%;
-  background-color: #b8dde3;
+  background-color: #ff14934a;
   height: 200px;
   width: 350px;
-  border: 0px solid rgb(155, 182, 209);
+  border: 0px solid #E91E63;
 }
 
 .stdcontainer>p:nth-child(1) {

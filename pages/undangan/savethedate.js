@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Countdown from 'react-countdown';
 
 import Animated from '../../Components/animated';
@@ -12,7 +12,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return (
       <Animated className="stdcontainer">
         <p>Save The Date</p>
-        <p>Sabtu, 24 Juni 2023</p>
+        <p>Minggu, 18 Februai 2024</p>
         <div className="countdowntimer">
           <div>
             <p>{days}</p>
@@ -46,22 +46,31 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 function SaveTheDate() {
-
   const [hasMounted, setHasMounted] = useState(false);
+  const [height, setHeight] = useState(0)
+  const ref = useRef(null)
+
   useEffect(() => {
     setHasMounted(true);
+    setHeight(ref.current?.clientHeight)
   }, []);
-  if (!hasMounted) {
-    return null;
-  }
+
+  if (!hasMounted) return (
+    <div style={{ height }}>
+      <div className="container savethedate" ref={ref} />
+      <div className="background-images" style={{ height, bottom: height }} />
+    </div>
+  );
 
   return (
-    <div className="container savethedate">
-      <img src="/static/images/gallery (7).jpg" alt="" />
-      <Countdown
-        date={'2024-02-18T09:00:00'}
-        renderer={renderer}
-      />
+    <div style={{ height }}>
+      <div className="container savethedate" ref={ref}>
+        <Countdown
+          date={'2024-02-18T09:00:00'}
+          renderer={renderer}
+        />
+      </div>
+      <div className="background-images" style={{ height, bottom: height }} />
     </div>
   )
 }

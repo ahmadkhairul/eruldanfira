@@ -1,3 +1,5 @@
+import { useState, useEffect, useRef } from 'react';
+
 import Animated from '../../Components/animated';
 import { BsGift, BsFiles } from "react-icons/bs";
 
@@ -14,47 +16,56 @@ function copyToCB(text) {
 
 const gift = [
   {
-    text: "0123802152100",
-    description: "BJB a/n Shafira Nur Zainal Abidin",
-    copy: "0123802152100",
+    text: "2430148632",
+    description: "BCA a/n Selvia Apriyani",
+    copy: "2430148632",
   },
   {
-    text: "1270010496139",
-    description: "MANDIRI a/n Ahmad Khairul Anwar",
-    copy: "1270010496139"
+    text: "074901019526506",
+    description: "BRI a/n Ahmad Najib F",
+    copy: "074901019526506"
   },
   {
     text: "Alamat Pengiriman Hadiah Fisik",
-    description: "KP. NAGRAK RT 03/RW 04 DESA CIKELAT, KEC CISOLOK, KAB. SUKABUMI, JAWA BARAT 43366 (DEPAN BALAI DESA CIKELAT)",
-    copy: "KP. NAGRAK RT 03/RW 04 DESA CIKELAT, KEC CISOLOK, KAB. SUKABUMI, JAWA BARAT 43366 (DEPAN BALAI DESA CIKELAT)"
+    description: "Komplek Rancaekek Permai 2 Blok B22 No 12, Rt 1 Rw 23, Desa Jelegong, Kec. Rancaekek, Kab. Bandung",
+    copy: "Komplek Rancaekek Permai 2 Blok B22 No 12, Rt 1 Rw 23, Desa Jelegong, Kec. Rancaekek, Kab. Bandung"
   }
 ]
 const Weddinggift = () => {
+  const [height, setHeight] = useState(0)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    setHeight(ref.current.clientHeight)
+  }, []);
 
   return (
-    <div className="container weddinggift">
-      <Animated className="heading-title">
-        Wedding Gift
-      </Animated>
-      <Animated className="deskripsi">
-        Tanpa mengurangi rasa hormat, bagi keluarga, sahabat, dan rekan yang ingin memberikan tanda kasih untuk kami, dapat melalui :
-      </Animated>
-      {gift.map((e, i) => (
-        <Animated className="kado" key={i}>
-          <p><BsGift color="#ebebeb" size="50px" /></p>
-          <p>{e.text}</p>
-          <p>{e.description}</p>
-          <p><button onClick={() => copyToCB(e.copy)}>
-            <BsFiles /> &nbsp; salin
-          </button></p>
+    <div style={{ height }}>
+      <div className="container weddinggift" ref={ref}>
+        <Animated className="heading-title">
+          Wedding Gift
         </Animated>
-      ))}
-      <Animated className="thank-you">
-        <p>Atas Doa dan Restu dari Bapak/Ibu/Saudara/i</p>
-        <p>Kami ucapkan banyak terima kasih</p>
-        <p>Kami Yang Berbahagia,</p>
-        <p>Khairul {'&'} Shafira</p>
-      </Animated>
+        <Animated className="deskripsi">
+          Apabila memberi adalah tanda kasih anda. Anda dapat memberi kado secara cashless atau amplop digital kepada mempelai
+        </Animated>
+        {gift.map((e, i) => (
+          <Animated className="kado" key={i}>
+            <p><BsGift color="#ebebeb" size="50px" /></p>
+            <p>{e.text}</p>
+            <p>{e.description}</p>
+            <p><button onClick={() => copyToCB(e.copy)}>
+              <BsFiles /> &nbsp; salin
+            </button></p>
+          </Animated>
+        ))}
+        <Animated className="thank-you">
+          <p>Atas Doa dan Restu dari Bapak/Ibu/Saudara/i</p>
+          <p>Kami ucapkan banyak terima kasih</p>
+          <p>Kami Yang Berbahagia,</p>
+          <p>Najib {'&'} Selvia</p>
+        </Animated>
+      </div>
+      <div className="background-images" style={{ height, bottom: height }} />
     </div>
   )
 };
