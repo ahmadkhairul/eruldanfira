@@ -24,7 +24,7 @@ const Component = () => {
           <p>{'('}Najib{')'}</p>
           <p>{'&'}</p>
           <p>Selvia Apriyani</p>
-          <p>{'('}Selvia{')'}</p>
+          <p>{'('}Via{')'}</p>
           <p>You are invited to our wedding</p>
           <p>Kepada Yth.</p>
           <p>{capitalizeRemoveStrip(guestname)}</p>
