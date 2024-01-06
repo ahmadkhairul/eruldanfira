@@ -109,12 +109,12 @@ function Component() {
           <Weddinggift />
           <div className="footer">
             <small>&copy; 2024 Created by Khairul with lots of 🤎 for Najib and Selvia.</small>
-            {/* <small>
+            <small>
               Song by{' '}
-              <a href="https://www.youtube.com/watch?v=cjaW3edHhHA" target="_blank" rel="noreferrer">
-                Howl {'&'} J - Perhaps Love
+              <a href="https://www.youtube.com/watch?v=1Ej3InS5FEM" target="_blank" rel="noreferrer">
+                "Marry Your Daughter" - Brian McKnight Jr.
               </a>
-            </small> */}
+            </small>
           </div>
         </section>
         <FloatingMusic />

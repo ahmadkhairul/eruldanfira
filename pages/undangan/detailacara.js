@@ -47,7 +47,7 @@ const LocationMap = () => {
             Acara Resepsi
           </Animated>
           <Animated className="tanggal">
-            10:30 - 15:00 WIB
+            11:00 - 15:00 WIB
           </Animated>
         </div>
       </div>

@@ -13,8 +13,8 @@ const Component = () => {
   return (
     <div className="rootpage">
       <div>
-        <div className="heading-title">
-         NAJIB & SELVIA
+        <div className="heading-title heading-title-front">
+         Najib & Selvia
         </div>
         <div className="form-container">
           <label htmlFor="nama">NAMA :</label>

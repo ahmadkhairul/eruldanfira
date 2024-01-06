@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "WindSong";
+  src: url('/static/font/WindSong-Regular.ttf');
+}
+
 html,
 body {
   margin: 0em;
@@ -145,6 +150,12 @@ small {
   border-width: 2px 0px;
   border-style: solid;
   border-color: #f6f5f3;
+}
+
+.heading-title-front {
+  font-family: 'WindSong', cursive;
+  font-style: normal;
+  font-size: 60px;
 }
 
 main {
