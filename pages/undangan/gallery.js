@@ -17,7 +17,7 @@ function Journey() {
         <Animated className="heading-title">Gallery</Animated>
         <Animated>
           <Slider>
-            {[...Array(10)].map((i, index) => (
+            {[...Array(9)].map((i, index) => (
               <img key={index} src={`/static/images/gallery (${index + 1}).jpg`} />
             ))}
           </Slider>

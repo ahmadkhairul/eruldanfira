@@ -5,10 +5,9 @@ export default function Document() {
     <Html>
       <Head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="text/html; charset=UTF-8" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
         <meta name="description" content="The Wedding of Najib &amp; Selvia" />
         <meta property="og:site_name" content="najib-selvia.my.id" />
         <meta property="og:title" content="The Wedding of Najib &amp; Selvia" />
@@ -25,7 +24,7 @@ export default function Document() {
         <meta name="twitter:image:src" content="https://najib-selvia.my.id/static/images/meta-img.jpg" />
 
         <meta property="og:updated_time" content="1682008998" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans" />
