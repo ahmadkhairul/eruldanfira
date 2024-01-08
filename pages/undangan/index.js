@@ -108,7 +108,7 @@ function Component() {
           </div>
           <Weddinggift />
           <div className="footer">
-            <small>&copy; 2024 Created by Khairul with lots of 🤎 for Najib and Selvia.</small>
+            <small>&copy; 2024 Created by Khairul with 🤎 for Najib and Selvia.</small>
             <small>
               Song by{' '}
               <a href="https://www.youtube.com/watch?v=1Ej3InS5FEM" target="_blank" rel="noreferrer">

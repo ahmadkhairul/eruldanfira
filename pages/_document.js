@@ -11,7 +11,7 @@ export default function Document() {
         <meta name="description" content="The Wedding of Najib &amp; Selvia" />
         <meta property="og:site_name" content="najib-selvia.my.id" />
         <meta property="og:title" content="The Wedding of Najib &amp; Selvia" />
-        <meta property="og:description" content="Minggu, 18 Februari 2023" />
+        <meta property="og:description" content="Minggu, 18 Februari 2024" />
         <meta property="og:url" content="https://najib-selvia.my.id" />
         <meta property="og:image" content="https://najib-selvia.my.id/static/images/meta-img.jpg" />
         <meta property="og:type" content="website" />
