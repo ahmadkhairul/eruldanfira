@@ -39,15 +39,7 @@
   justify-content: center;
 }
 
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 100%px;
+.mapouter>a>img {
   border: 0.1px solid #fcfafa;
   border-radius: 10px;
-}
-
-.gmap_canvas>iframe {
-  width: 100%;
-  height: 500px;
 }
